@@ -61,7 +61,7 @@
 </head>
 <body>
     <div class="header">
-        <h1>우리 앱을 설치해주세요</h1>
+        <h1>FLO 앱을 설치해주세요</h1>
     </div>
     <div class="container">
         <p>더 나은 경험을 위해 앱을 설치해 주세요.</p>
@@ -100,7 +100,8 @@
 			location.href='x-web-search://?';
 		};
 		var useragt = navigator.userAgent.toLowerCase();
-		var target_url = location.href;
+		var target_url = "https://flomuz.io/s/e.BwRUA";
+
 		if(useragt.match(/kakaotalk/i)){
 			//카카오톡 외부브라우저로 호출
 			location.href = 'kakaotalk://web/openExternal?url='+encodeURIComponent(target_url);
@@ -131,7 +132,7 @@
 			}
 		}
 	});
-    
+
         // URL에서 파라미터 추출
         const urlParams = new URLSearchParams(window.location.search);
         const screenId = urlParams.get('screenId');
