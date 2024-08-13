@@ -69,6 +69,7 @@
             <a href="#" id="installAndroid" class="btn" style="display: none;">Android 앱 설치</a>
             <a href="#" id="installIOS" class="btn" style="display: none;">iOS 앱 설치</a>
             <a href="#" id="landingUrl" class="btn">AOS 아티스트 바로가기</a>
+            <a href="#" id="landingUrliOS" class="btn">iOS 아티스트 바로가기</a>
         </div>
         <div id="contentSection">
             <h2>공유된 콘텐츠</h2>
@@ -161,6 +162,7 @@
         document.getElementById('installAndroid').href = 'https://play.google.com/store/apps/details?id=skplanet.musicmate';
         document.getElementById('installIOS').href = 'https://apps.apple.com/app/id1129048043';
         document.getElementById('landingUrl').href = 'intent://'+target_url2.replace(/https?:\/\//i,'')+'#Intent;scheme=http;package=com.android.chrome;end';
+        document.getElementById('landingUrliOS').href = 'flomusic://view/content?type=ARTIST&id=404372458';
 
         // 공유된 콘텐츠 표시
         function fetchSharedContent(id) {
